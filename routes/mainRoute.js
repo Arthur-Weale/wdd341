@@ -1,8 +1,8 @@
 const express = require("express")
 const router = express.Router()
-const {getDatabase} = require("../controller/proffessional")
+const {getDatabase} = require("../controller/professional")
 
-router.get("/proffessional", async(req, res)=>{
+router.get("/professional", async(req, res)=>{
     try{
         const response = await getDatabase()
         console.log(response)
